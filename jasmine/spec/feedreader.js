@@ -31,7 +31,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('each feed has url defind', function() {
+        it('url of each feed is defined and not empty', function() {
             allFeeds.forEach(function(feed) {
                 // is url defind?
                 expect(feed.url).toBeDefined();
@@ -39,11 +39,18 @@ $(function() {
                 expect(feed.url.length).not.toBe(0);
             });
         });
-
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+        it('name of each feed is defined and not empty', function() {
+            allFeeds.forEach(function(feed) {
+                // is url defind?
+                expect(feed.name).toBeDefined();
+                // is url empty?
+                expect(feed.name.length).not.toBe(0);
+            });
+        });
     });
 
 
