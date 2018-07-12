@@ -1,3 +1,8 @@
+## How to run Feed Reader?
+
+Click on green "clone or download" button then select download zip. After the filles have downloaded go to download location unzip the file named "frontend-nanodegree-feedreader--master" and in the folder with the same name locate index.html file. Doubble cliking this file will launch Feed Reader. 
+
+
 # Project Overview
 
 
