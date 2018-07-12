@@ -117,7 +117,7 @@ $(function() {
         });
 
         it('when a new feed is loaded by the loadFeed function the content changes.', function(done) {
-            expect(feedOne).not.toEqual(feedTwo);
+            expect(feedOne !== feedTwo).toBe(true);
             done();
         });
     });
