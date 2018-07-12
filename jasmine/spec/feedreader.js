@@ -95,8 +95,7 @@ $(function() {
         //     expect(feedEntry.length).toBeDefined();
         // });
         it('there is .entry element within the .feed container', function() {
-            expect($('.feed').find('entry')).toBeDefined();
-            
+            expect($('.feed .entry h2').html()).toBeDefined();
         });
     });
     /* TODO: Write a new test suite named "New Feed Selection" */
@@ -107,17 +106,13 @@ $(function() {
          */
         var feedOne,
             feedTwo;
-        beforeEach(function(done){
+        beforeEach(function(done) {
             loadFeed(0, function() {
                 feedOne = $('.entry h2').html();
-                done();
-            });
-        });
-
-        beforeEach(function(done){
-            loadFeed(1, function() {
-                feedTwo = $('.entry h2').html();
-                done();
+                loadFeed(1, function() {
+                    feedTwo = $('.entry h2').html();
+                    done();
+                });
             });
         });
 
